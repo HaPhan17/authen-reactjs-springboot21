@@ -1,0 +1,20 @@
+#Spring config
+spring:
+  application:
+    name: ms-multi-tenant-task
+    version: '1.0.0'
+
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            loggerLevel: FULL
+            connectTimeout: 60000
+            readTimeout: 10000
+            error-decoder: feign.codec.ErrorDecoder.Default
+    config:
+      enabled: false
+jwt:
+  secret: 8JKPnatelNEqfEvhaGmqOAtPrsDUoWejwRm8SegFZY8=
+
